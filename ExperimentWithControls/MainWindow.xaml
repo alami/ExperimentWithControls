@@ -16,6 +16,14 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Label Content="Enter a number" FontSize="18" Margin="10,10,0,0" 
+            HorizontalAlignment="Left" VerticalAlignment="Top" />
 
+        <TextBlock x:Name="number" Grid.Column="1" Text="#" FontSize="24"
+            HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" />
+
+        <TextBox x:Name="numberTextBox" FontSize="18" Margin="10,49,0,0" Text="0" Width="120"
+            HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="numberTextBox_TextChanged" PreviewTextInput="numberTextBox_PreviewTextInput" 
+                  />
     </Grid>
 </Window>
